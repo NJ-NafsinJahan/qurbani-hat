@@ -25,7 +25,7 @@ const Banner = () => {
             </p>
 
             <button className=" w-125 m-4 p-2 rounded bg-[#4D833D] text-[#fafffa]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
-              Explore All Cattle
+              Explore All Livestock
             </button>
           </div>
         </div>

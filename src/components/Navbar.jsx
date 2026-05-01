@@ -7,12 +7,12 @@ const Navbar = () => {
   return (
     <div className="shadow px-5 ">
       <nav className=" flex justify-between items-center  py-1 max-w-7xl mx-auto w-full">
-        <ul className="flex items-center gap-5 text-[20px] text-[#434643] font-semibold">
+        <ul className="flex items-center gap-5 text-[19px] text-[#434643] font-semibold">
           <li>
             <Link href={"/"}>Home</Link>
           </li>
           <li>
-            <Link href={"/all-animals"}>All Animals</Link>
+            <Link href={"/all-livestock"}>All Livestock</Link>
           </li>
         </ul>
 
