@@ -14,12 +14,16 @@ const AllLiveStock = async () => {
         <h1 className=" text-2xl font-bold">Featured Cattle</h1>
         <p>Choose from our best collection for your Qurbani</p>
       </div>
-      {/* livestock card */}
-      {topLivestock.map((livestock) => (
-        // <div key={livestock.id}>{livestock.name}</div>
-        <LivestockCard key={livestock.id} livestock={livestock}></LivestockCard>
-      ))}
-      <div></div>
+      <div className="grid grid-cols-4 items-center border gap-8 m-6 p-4">
+        {/* livestock card */}
+        {topLivestock.map((livestock) => (
+          // <div key={livestock.id}>{livestock.name}</div>
+          <LivestockCard
+            key={livestock.id}
+            livestock={livestock}
+          ></LivestockCard>
+        ))}
+      </div>
     </div>
   );
 };
