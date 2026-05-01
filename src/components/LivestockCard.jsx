@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const LivestockCard = ({ livestock }) => {
@@ -6,10 +7,12 @@ const LivestockCard = ({ livestock }) => {
     <div>
       <div className="card bg-base-100 w-96 shadow-sm">
         <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
+          <Image
+            src={livestock.image}
+            alt={livestock.name}
+            height={200}
+            width={200}
+          ></Image>
         </figure>
         <div className="card-body">
           <h2 className="card-title">

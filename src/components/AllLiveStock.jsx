@@ -4,9 +4,9 @@ import LivestockCard from "./LivestockCard";
 const AllLiveStock = async () => {
   const res = await fetch("https://qurbani-hat-swart.vercel.app/data.json");
   const allLivestock = await res.json();
-  console.log("allLivestock", allLivestock);
+  //   console.log("allLivestock", allLivestock);
   const topLivestock = allLivestock.slice(0, 8);
-  console.log("topLivestock", topLivestock);
+  //   console.log("topLivestock", topLivestock);
 
   return (
     <div>

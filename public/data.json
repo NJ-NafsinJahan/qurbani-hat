@@ -9,7 +9,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural food.",
-    "image": "https://i.postimg.cc/example-cow1.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Large Animal",
     "status": "Available"
   },
@@ -23,7 +23,7 @@
     "age": 4,
     "location": "Dhaka",
     "description": "High milk producing imported breed cow, healthy and strong.",
-    "image": "https://i.postimg.cc/example-cow2.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Large Animal",
     "status": "Booked"
   },
@@ -37,7 +37,7 @@
     "age": 5,
     "location": "Rajshahi",
     "description": "Strong and muscular Brahman bull, perfect for Qurbani.",
-    "image": "https://i.postimg.cc/example-cow3.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Large Animal",
     "status": "Available"
   },
@@ -51,7 +51,7 @@
     "age": 4,
     "location": "Chittagong",
     "description": "Native red cow known for adaptability and strength.",
-    "image": "https://i.postimg.cc/example-cow4.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Large Animal",
     "status": "Available"
   },
@@ -65,7 +65,7 @@
     "age": 4,
     "location": "Sirajganj",
     "description": "Heat-resistant dairy breed with good meat quality.",
-    "image": "https://i.postimg.cc/example-cow5.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Large Animal",
     "status": "Booked"
   },
@@ -80,7 +80,7 @@
     "age": 2,
     "location": "Khulna",
     "description": "Famous meat goat of Bangladesh, high quality meat.",
-    "image": "https://i.postimg.cc/example-goat1.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Small Animal",
     "status": "Available"
   },
@@ -94,7 +94,7 @@
     "age": 3,
     "location": "Tangail",
     "description": "Large-sized goat with good meat and milk production.",
-    "image": "https://i.postimg.cc/example-goat2.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Small Animal",
     "status": "Booked"
   },
@@ -108,7 +108,7 @@
     "age": 3,
     "location": "Cumilla",
     "description": "Fast growing goat breed suitable for meat production.",
-    "image": "https://i.postimg.cc/example-goat3.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Small Animal",
     "status": "Available"
   },
@@ -122,7 +122,7 @@
     "age": 4,
     "location": "Dhaka",
     "description": "Premium meat goat breed with high growth rate.",
-    "image": "https://i.postimg.cc/example-goat4.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Small Animal",
     "status": "Booked"
   },
@@ -137,7 +137,7 @@
     "age": 6,
     "location": "Saudi Import",
     "description": "Single-humped camel used for transport and Qurbani.",
-    "image": "https://i.postimg.cc/example-camel1.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Large Animal",
     "status": "Available"
   },
@@ -151,7 +151,7 @@
     "age": 7,
     "location": "Central Asia Import",
     "description": "Double-humped camel adapted to cold climates.",
-    "image": "https://i.postimg.cc/example-camel2.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Large Animal",
     "status": "Booked"
   },
@@ -166,7 +166,7 @@
     "age": 2,
     "location": "Pabna",
     "description": "Local sheep suitable for meat and Qurbani.",
-    "image": "https://i.postimg.cc/example-sheep1.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Small Animal",
     "status": "Available"
   },
@@ -180,7 +180,7 @@
     "age": 3,
     "location": "Middle East Import",
     "description": "Fat-tailed sheep known for meat quality.",
-    "image": "https://i.postimg.cc/example-sheep2.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Small Animal",
     "status": "Booked"
   },
@@ -194,7 +194,7 @@
     "age": 4,
     "location": "South Africa Import",
     "description": "Fast-growing meat sheep breed with high yield.",
-    "image": "https://i.postimg.cc/example-sheep3.jpg",
+    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
     "category": "Small Animal",
     "status": "Available"
   }
