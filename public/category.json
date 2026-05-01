@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Cow",
+    "type": "Cow"
+  },
+  {
+    "id": 2,
+    "name": "Goat",
+    "type": "Goat"
+  },
+  {
+    "id": 3,
+    "name": "Camel",
+    "type": "Camel"
+  },
+  {
+    "id": 4,
+    "name": "Sheep",
+    "type": "Sheep"
+  }
+]
