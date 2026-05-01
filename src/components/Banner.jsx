@@ -1,7 +1,6 @@
 import React from "react";
 import bannerImg from "@/assets/banner.jpg";
 import Image from "next/image";
-import eidImg from "@/assets/eid.png";
 
 const Banner = () => {
   return (
