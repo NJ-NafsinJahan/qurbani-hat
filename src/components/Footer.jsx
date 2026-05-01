@@ -69,7 +69,7 @@ const Footer = () => {
                   <LuPhoneCall />
                 </span>
                 Phone: 90128-444-333
-                <span className="absolute left-0 bottom-0 w-0 h-0.5bg-[#6eeb48] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#6eeb48] transition-all duration-300 group-hover:w-full"></span>
               </li>
 
               {/* email */}

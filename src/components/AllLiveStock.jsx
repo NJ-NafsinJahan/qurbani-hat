@@ -9,12 +9,14 @@ const AllLiveStock = async () => {
   //   console.log("topLivestock", topLivestock);
 
   return (
-    <div>
-      <div>
-        <h1 className=" text-2xl font-bold">Featured Cattle</h1>
-        <p>Choose from our best collection for your Qurbani</p>
+    <div className=" container mx-auto">
+      <div className="my-3 bg-gray-50 rounded p-4">
+        <h1 className=" text-3xl font-bold text-[#2f302f]">Featured Cattle</h1>
+        <p className="text-[#787978] mt-2">
+          Choose from our best collection for your Qurbani
+        </p>
       </div>
-      <div className="grid grid-cols-4 items-center border gap-8 m-6 p-4">
+      <div className="grid grid-cols-4 items-center gap-6 mx-auto p-2">
         {/* livestock card */}
         {topLivestock.map((livestock) => (
           // <div key={livestock.id}>{livestock.name}</div>
