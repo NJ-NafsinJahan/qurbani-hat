@@ -3,35 +3,74 @@ import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
 
-const signInPage = () => {
+const signUpPage = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const handleSigninFunc = (data) => {
+  const handleSignupFunc = (data) => {
     console.log("data", data);
+    const { name, photo, email, password } = data;
+    console.log(name, email);
   };
-  console.log(errors, "error");
+  // console.log(errors, "error");
   return (
-    <div className="container mx-auto min-h-screen flex justify-center items-center ">
+    <div className="container mx-auto min-h-screen my-8 flex justify-center items-center ">
       <div className=" w-full max-w-md p-8 shadow-md rounded-2xl bg-green-50">
         <h2 className="font-bold text-3xl text-center mb-1.5 text-[#1E2939]">
-          Welcome Back ! 👋
+          Create an account
         </h2>
         <p className="font-normal text-sm text-center mb-6 text-[#919192]">
-          SingIn to explore premium livestock
+          Create your account to continue
         </p>
 
         {/* form section */}
-        <form className="space-y-4" onSubmit={handleSubmit(handleSigninFunc)}>
+        <form className="space-y-3" onSubmit={handleSubmit(handleSignupFunc)}>
           <hr className="text-gray-200 border" />
+          {/* Name */}
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend text-[18px] mb-1 text-[#1E2939]">
+              Full Name
+            </legend>
+            <input
+              type="text"
+              className="input w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-green-500 outline-none"
+              placeholder="Type your name"
+              {...register("name", {
+                required: "Email field is required",
+              })}
+            />
+            {errors.name && (
+              <p className="text-red-500">{errors.name.message}</p>
+            )}
+          </fieldset>
+
+          {/* photo-url */}
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend text-[18px] mb-1 text-[#1E2939]">
+              Photo URL
+            </legend>
+            <input
+              type="text"
+              className="input w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-green-500 outline-none"
+              placeholder="Type your photo url"
+              {...register("photo", {
+                required: "Photo URL field is required",
+              })}
+            />
+            {errors.photo && (
+              <p className="text-red-500">{errors.photo.message}</p>
+            )}
+          </fieldset>
+
           {/* Email */}
           <fieldset className="fieldset">
             <legend className="fieldset-legend text-[18px] mb-1 text-[#1E2939]">
-              Email
+              Email Address
             </legend>
+
             <input
               type="email"
               className="input w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-green-500 outline-none"
@@ -79,15 +118,15 @@ const signInPage = () => {
           {/* signin btn */}
 
           <button className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
-            SignIn
+            SignUp
           </button>
         </form>
         {/* for sign up */}
         <p className="mt-3 text-center">
-          Don't have an account?
-          <Link href={"/signup"} className="text-[#4f8f3e] font-medium">
+          Already have an account?
+          <Link href={"/signin"} className="text-[#4f8f3e] font-medium">
             {" "}
-            SignUp
+            SignIn here
           </Link>
         </p>
       </div>
@@ -95,4 +134,4 @@ const signInPage = () => {
   );
 };
 
-export default signInPage;
+export default signUpPage;

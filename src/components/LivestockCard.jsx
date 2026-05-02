@@ -58,7 +58,7 @@ const LivestockCard = ({ livestock }) => {
             </div>
           </div>
           <Link href={`/all-livestock/${livestock.id}`}>
-            <button className=" btn rounded-full  bg-[#4D833D] text-[18px] font-light text-[#fafffa]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
+            <button className=" btn w-full rounded-full  bg-[#4D833D] text-[18px] font-light text-[#fafffa]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
               See Details
             </button>
           </Link>

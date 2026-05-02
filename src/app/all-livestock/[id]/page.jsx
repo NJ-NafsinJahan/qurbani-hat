@@ -13,38 +13,18 @@ const livestockDetailsPage = async ({ params }) => {
   //   console.log(livestock, "livestock");
 
   return (
-    <div className="container mx-auto mb-5">
-      <h1>livestock Details Page</h1>
-      <div className="border flex justify-around items-center">
-        {/* image */}
-        <div>
-          <Image
-            src={livestock.image}
-            alt={livestock.name}
-            height={500}
-            width={600}
-            className="rounded my-3 mx-5 hover:scale-105 transition"
-          ></Image>
-
-          {/* <p className="text-red-300 text-xl">{livestock.description}</p> */}
-        </div>
-
-        {/* Details  */}
-        <div>
-          <div>
-            <h1>{livestock.name}</h1>
-            <p>{livestock.price}</p>
-            <p>{livestock.description}</p>
-          </div>
-          <p>Specification </p>
-          <div>
-            <div>
-              <p>Breed: {livestock.breed}</p>
-              <p>Age: {livestock.age}</p>
-              <p>Weight: {livestock.weight}</p>
-              <p>Location: {livestock.location}</p>
-            </div>
-          </div>
+    <div className="card card-side bg-base-100 shadow-sm">
+      <figure>
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+          alt="Movie"
+        />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title">New movie is released!</h2>
+        <p>Click the button to watch on Jetflix app.</p>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary">Watch</button>
         </div>
       </div>
     </div>
