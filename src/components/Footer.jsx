@@ -97,9 +97,10 @@ const Footer = () => {
 
         {/* copy right div */}
         <div>
-          <div className="mb-3">
+          <div className="mb-6">
             <p>Social Links</p>
-            <div className="flex gap-4">
+            <hr className="text-gray-500 " />
+            <div className="flex gap-4 mt-2">
               <SiFacebook />
               <GrInstagram />
               <IoLogoYoutube />
