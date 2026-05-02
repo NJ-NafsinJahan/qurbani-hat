@@ -35,10 +35,12 @@ const Navbar = () => {
         <div className="flex">
           <ul className="flex items-center gap-4  text-[20px] text-[#434643] font-semibold">
             <li>
-              <Link href={"/login"}>LogIn</Link>
+              <Link href={"/signup"} className="font-normal">
+                SignUp
+              </Link>
             </li>
             <li>
-              <Link href={"/logout"}>LogOut</Link>
+              <Link href={"/signin"}>SignIn</Link>
             </li>
           </ul>
         </div>

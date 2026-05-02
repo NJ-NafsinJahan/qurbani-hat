@@ -1,12 +1,8 @@
-import { Poppins, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// const PoppinsFont = Poppins({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "600", "700"],
-// });
 const OutfitFont = Outfit({
   subsets: ["latin"],
 });
