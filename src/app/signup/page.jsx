@@ -1,10 +1,12 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
 
 const signUpPage = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -29,6 +31,7 @@ const signUpPage = () => {
     }
     if (res) {
       alert("SingUp successful");
+      router.push("/signin");
     }
   };
   // console.log(errors, "error");
@@ -133,11 +136,9 @@ const signUpPage = () => {
           </div>
           {/* signin btn */}
 
-          <Link href="/signin">
-            <button className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
-              SignUp
-            </button>
-          </Link>
+          <button className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
+            SignUp
+          </button>
         </form>
         {/* for sign up */}
         <p className="mt-3 text-center">

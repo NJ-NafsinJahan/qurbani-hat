@@ -1,6 +1,7 @@
 import React from "react";
 import LivestockCard from "./LivestockCard";
 import StaticFirst from "./shared/StaticFirst";
+import TipsBreedsPage from "./shared/TipsBreeds";
 
 const AllLiveStock = async () => {
   const res = await fetch("https://qurbani-hat-swart.vercel.app/data.json");
@@ -28,6 +29,7 @@ const AllLiveStock = async () => {
           ></LivestockCard>
         ))}
       </div>
+      <TipsBreedsPage></TipsBreedsPage>
     </div>
   );
 };
