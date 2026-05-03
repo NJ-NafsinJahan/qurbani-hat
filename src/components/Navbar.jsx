@@ -55,7 +55,7 @@ const Navbar = () => {
           </ul>
         ) : (
           <div className="flex items-center gap-3">
-            <div className="avatar">
+            <div className="avatar flex flex-col justify-center items-center">
               {user?.image ? (
                 <div className="w-10.5 rounded-full">
                   <img
@@ -71,6 +71,9 @@ const Navbar = () => {
                   </div>
                 </div>
               )}
+              <Link href={"/profile"}>
+                <p className="text-[14px]">My Profile</p>
+              </Link>
             </div>
 
             <button
