@@ -131,12 +131,13 @@ const signUpPage = () => {
               Forgot password?
             </a>
           </div>
-
           {/* signin btn */}
 
-          <button className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
-            SignUp
-          </button>
+          <Link href="/signin">
+            <button className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
+              SignUp
+            </button>
+          </Link>
         </form>
         {/* for sign up */}
         <p className="mt-3 text-center">

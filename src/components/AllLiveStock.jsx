@@ -1,15 +1,17 @@
 import React from "react";
 import LivestockCard from "./LivestockCard";
+import StaticFirst from "./shared/StaticFirst";
 
 const AllLiveStock = async () => {
   const res = await fetch("https://qurbani-hat-swart.vercel.app/data.json");
   const allLivestock = await res.json();
   //   console.log("allLivestock", allLivestock);
-  const topLivestock = allLivestock.slice(0, 8);
+  const topLivestock = allLivestock.slice(0, 4);
   //   console.log("topLivestock", topLivestock);
 
   return (
     <div className=" container mx-auto">
+      <StaticFirst></StaticFirst>
       <div className="my-3 bg-gray-50 rounded p-4">
         <h1 className=" text-3xl font-bold text-[#2f302f]">Featured Cattle</h1>
         <p className="text-[#787978] mt-2">
