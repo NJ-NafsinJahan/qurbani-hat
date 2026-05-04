@@ -137,7 +137,7 @@
     "age": 6,
     "location": "Saudi Import",
     "description": "Single-humped camel used for transport and Qurbani.",
-    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
+    "image": "https://i.ibb.co.com/CppC99HT/camel2.jpg",
     "category": "Large Animal",
     "status": "Available"
   },
@@ -151,7 +151,7 @@
     "age": 7,
     "location": "Central Asia Import",
     "description": "Double-humped camel adapted to cold climates.",
-    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
+    "image": "https://i.ibb.co.com/N6G1gZff/camel1.jpg",
     "category": "Large Animal",
     "status": "Booked"
   },
@@ -166,7 +166,7 @@
     "age": 2,
     "location": "Pabna",
     "description": "Local sheep suitable for meat and Qurbani.",
-    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
+    "image": "https://i.ibb.co.com/bgdnMqpm/sheep1.jpg",
     "category": "Small Animal",
     "status": "Available"
   },
@@ -180,7 +180,7 @@
     "age": 3,
     "location": "Middle East Import",
     "description": "Fat-tailed sheep known for meat quality.",
-    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
+    "image": "https://i.ibb.co.com/b5FVMWvd/sheep2.jpg",
     "category": "Small Animal",
     "status": "Booked"
   },
@@ -194,7 +194,7 @@
     "age": 4,
     "location": "South Africa Import",
     "description": "Fast-growing meat sheep breed with high yield.",
-    "image": "https://i.ibb.co.com/MkV7dXnK/cow.jpg",
+    "image": "https://i.ibb.co.com/nqJhQjqS/sheep3.jpg",
     "category": "Small Animal",
     "status": "Available"
   }

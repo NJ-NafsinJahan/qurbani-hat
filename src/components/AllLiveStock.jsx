@@ -17,7 +17,7 @@ const AllLiveStock = async () => {
     <div className=" container mx-auto">
       <StaticFirst></StaticFirst>
       <EidMubarakMarquee></EidMubarakMarquee>
-      <div className=" flex justify-between items-center ">
+      <div className=" flex justify-between items-center bg-gray-50">
         <div className="my-3 bg-gray-50 rounded p-4">
           <h1 className=" text-3xl font-bold text-[#2f302f]">
             Featured Cattle
