@@ -4,7 +4,7 @@ import React from "react";
 // import { IoMdPricetags } from "react-icons/io";
 
 const LivestockCard = ({ livestock }) => {
-  console.log(livestock);
+  // console.log(livestock);
   return (
     <div className="">
       <div className="card bg-base-100 mx-auto shadow-md ">

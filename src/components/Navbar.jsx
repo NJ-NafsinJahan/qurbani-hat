@@ -4,6 +4,7 @@ import logoImg from "@/assets/logo1.jpeg";
 import Link from "next/link";
 import Image from "next/image";
 import { authClient } from "@/lib/auth-client";
+import NavLink from "./shared/NavLink";
 
 const Navbar = () => {
   const userData = authClient.useSession();
@@ -19,10 +20,10 @@ const Navbar = () => {
       <nav className=" flex justify-between items-center  py-1 max-w-7xl mx-auto w-full">
         <ul className="flex items-center gap-5 text-[19px] text-[#1E2939] font-semibold">
           <li>
-            <Link href={"/"}>Home</Link>
+            <NavLink href={"/"}>Home</NavLink>
           </li>
           <li>
-            <Link href={"/all-livestock"}>All Livestock</Link>
+            <NavLink href={"/all-livestock"}>All Livestock</NavLink>
           </li>
         </ul>
 

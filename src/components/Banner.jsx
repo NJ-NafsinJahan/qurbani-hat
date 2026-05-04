@@ -1,7 +1,7 @@
 import React from "react";
 import bannerImg from "@/assets/banner.jpg";
 import Image from "next/image";
-
+import Link from "next/link";
 const Banner = () => {
   return (
     <div>
@@ -22,10 +22,11 @@ const Banner = () => {
               From Our Farms to Your Qurbani.Celebrate Eid al-Adha Meaningful &
               Responsible.--"Eid Mubarak"
             </p>
-
-            <button className=" w-125 m-4 p-2 rounded bg-[#4D833D] text-[#fafffa]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
-              Explore All Livestock
-            </button>
+            <Link href={"/all-livestock"}>
+              <button className=" w-125 m-4 p-2 rounded bg-[#4D833D] text-[#fafffa]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
+                Explore All Livestock
+              </button>
+            </Link>
           </div>
         </div>
       </div>

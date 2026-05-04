@@ -15,7 +15,7 @@ const TipsBreedsPage = () => {
       {/* Tips Section */}
       <div className="mb-10">
         <h2 className="text-2xl font-semibold mb-4 text-[#4D833D]">
-          💡 Qurbani Tips
+          Qurbani Tips
         </h2>
 
         <div className="grid md:grid-cols-2 gap-4">
@@ -43,7 +43,7 @@ const TipsBreedsPage = () => {
       {/* Breeds Section */}
       <div>
         <h2 className="text-2xl font-semibold mb-4 text-[#4D833D]">
-          ✨ Top Breeds in Bangladesh
+          Top Breeds in Bangladesh
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
