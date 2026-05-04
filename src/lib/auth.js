@@ -1,7 +1,8 @@
 import { betterAuth } from "better-auth";
 import { MongoClient } from "mongodb";
-import { mongodbAdapter } from "better-auth/adapters/mongodb";
-import { google } from "@better-auth/core/social-providers";
+import { mongodbAdapter } from "@better-auth/mongo-adapter";
+import dns from "node:dns/promises";
+dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
 const client = new MongoClient(process.env.MONGODB_URI);
 const db = client.db("qurbanihat");
@@ -14,14 +15,10 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
-  // socialProviders: {
-  //   clientId: process.env.GOOGLE_CLIENT_ID,
-  //   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  // },
-  providers: {
-    google: google({
+  socialProviders: {
+    google: {
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    }),
+    },
   },
 });

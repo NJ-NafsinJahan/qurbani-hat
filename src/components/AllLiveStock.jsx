@@ -4,6 +4,7 @@ import StaticFirst from "./shared/StaticFirst";
 import TipsBreedsPage from "./shared/TipsBreeds";
 import EidMubarakMarquee from "./shared/EidMubarak";
 import Link from "next/link";
+import WhyUsPage from "./shared/WhyUs";
 
 const AllLiveStock = async () => {
   const res = await fetch("https://qurbani-hat-swart.vercel.app/data.json");
@@ -40,6 +41,7 @@ const AllLiveStock = async () => {
         ))}
       </div>
       <TipsBreedsPage></TipsBreedsPage>
+      <WhyUsPage></WhyUsPage>
     </div>
   );
 };

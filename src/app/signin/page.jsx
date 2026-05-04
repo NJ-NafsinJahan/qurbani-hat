@@ -103,15 +103,15 @@ const signInPage = () => {
 
           {/* signin btn */}
 
-          <button
-            onClick={handleGoogleSignIn}
-            className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300"
-          >
+          <button className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
             SignIn
           </button>
         </form>
         <div className="divider">OR</div>
-        <button className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
+        <button
+          onClick={handleGoogleSignIn}
+          className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300"
+        >
           Sign in with Google
         </button>
 
