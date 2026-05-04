@@ -25,10 +25,11 @@ const signInPage = () => {
     console.log(res, error);
     // ************
     if (error) {
-      alert(error.message);
+      toast.error(error.message);
     }
+
     if (res) {
-      alert("SingUp successful");
+      toast.success("SignIn successful");
       router.push("/signin");
     }
   };
@@ -112,7 +113,7 @@ const signInPage = () => {
           onClick={handleGoogleSignIn}
           className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300"
         >
-          Sign in with Google
+          SignIn with Google
         </button>
 
         {/* for sign up */}

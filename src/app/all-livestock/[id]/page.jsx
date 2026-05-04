@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
+// import BookingForm from "@/components/BookingForm";
 import "animate.css";
+import BookingForm from "@/components/shared/BookingForm";
 
 const livestockDetailsPage = async ({ params }) => {
   const { id } = await params;
@@ -100,6 +102,9 @@ const livestockDetailsPage = async ({ params }) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container mx-auto flex justify-center items-center ">
+        <BookingForm></BookingForm>
       </div>
     </div>
   );

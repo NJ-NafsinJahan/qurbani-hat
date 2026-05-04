@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const signUpPage = () => {
   const router = useRouter();
@@ -26,13 +27,22 @@ const signUpPage = () => {
       callbackURL: "/",
     });
     console.log(res, error);
+
     if (error) {
-      alert(error.message);
+      toast.error(error.message);
     }
+
     if (res) {
-      alert("SingUp successful");
+      toast.success("SignUp successful");
       router.push("/signin");
     }
+  };
+
+  // google authentication
+  const handleGoogleSignUp = async () => {
+    await authClient.signIn.social({
+      provider: "google",
+    });
   };
   // console.log(errors, "error");
 
@@ -123,7 +133,7 @@ const signUpPage = () => {
               </p>
             )}
           </fieldset>
-
+          {/*  */}
           {/* Remember + Forgot */}
           <div className="flex justify-between items-center text-sm">
             <label className="flex items-center gap-2">
@@ -140,6 +150,15 @@ const signUpPage = () => {
             SignUp
           </button>
         </form>
+
+        {/* ****** */}
+        <div className="divider">OR</div>
+        <button
+          onClick={handleGoogleSignUp}
+          className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300"
+        >
+          SignUp with Google
+        </button>
         {/* for sign up */}
         <p className="mt-3 text-center">
           Already have an account?
