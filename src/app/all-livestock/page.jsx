@@ -7,7 +7,7 @@ const AllLiveStockPage = async () => {
   //   console.log("allLivestock", allLivestock);
   return (
     <div>
-      <h1 className="text-3xl font-bold">All LiveStocks:</h1>
+      <h1 className="text-3xl font-bold">Choose your Cattle Here</h1>
       <div>
         <div className="grid grid-cols-4 items-center gap-6 mx-auto p-2">
           {/* livestock card */}
