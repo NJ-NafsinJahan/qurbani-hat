@@ -33,6 +33,12 @@ const signInPage = () => {
     }
   };
   console.log(errors, "error");
+  // google authentication
+  const handleGoogleSignIn = async () => {
+    await authClient.signIn.social({
+      provider: "google",
+    });
+  };
   return (
     <div className="container mx-auto min-h-screen flex justify-center items-center ">
       <div className=" w-full max-w-md p-8 shadow-md rounded-2xl bg-green-50">
@@ -97,10 +103,18 @@ const signInPage = () => {
 
           {/* signin btn */}
 
-          <button className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
+          <button
+            onClick={handleGoogleSignIn}
+            className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300"
+          >
             SignIn
           </button>
         </form>
+        <div className="divider">OR</div>
+        <button className=" btn w-full rounded-full mb-0.5 bg-[#4D833D] text-[20px] font-light text-[#fefefe]  hover:bg-[#4f8f3e] hover:scale-105 hover:shadow-md transition duration-300">
+          Sign in with Google
+        </button>
+
         {/* for sign up */}
         <p className="mt-3 text-center">
           Don't have an account?
