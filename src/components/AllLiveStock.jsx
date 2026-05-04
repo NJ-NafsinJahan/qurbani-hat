@@ -30,7 +30,7 @@ const AllLiveStock = async () => {
           <p className="text-xl font-semibold text-[#09b852]"> See All....</p>
         </Link>
       </div>
-      <div className="grid grid-cols-4 items-center gap-6 mx-auto p-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mx-auto p-2">
         {/* livestock card */}
         {topLivestock.map((livestock) => (
           // <div key={livestock.id}>{livestock.name}</div>

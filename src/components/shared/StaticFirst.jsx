@@ -5,7 +5,7 @@ import { PiHandCoins } from "react-icons/pi";
 
 const StaticFirst = () => {
   return (
-    <div className="w-full max-w-full p-4 shadow rounded-2xl border-gray-300 flex justify-center items-center gap-4 mt-3">
+    <div className="w-full max-w-full p-4 shadow rounded-2xl border border-gray-300 flex flex-col sm:flex-row justify-center items-center gap-4 mt-3">
       <div className="rounded-2xl flex justify-center items-center gap-1 m-2">
         <div className="avatar">
           <div className="w-18 h-18 rounded-full text-gray-400 flex items-center justify-center">

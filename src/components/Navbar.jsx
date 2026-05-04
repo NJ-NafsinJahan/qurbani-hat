@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   return (
     <div className="shadow px-5 ">
-      <nav className=" flex justify-between items-center  py-1 max-w-7xl mx-auto w-full">
+      <nav className=" flex flex-col md:flex-row justify-between items-center py-2 md:py-1 max-w-7xl mx-auto w-full gap-3 md:gap-0">
         <ul className="flex items-center gap-5 text-[19px] text-[#1E2939] font-semibold">
           <li>
             <NavLink href={"/"}>Home</NavLink>

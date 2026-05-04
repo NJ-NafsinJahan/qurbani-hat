@@ -9,15 +9,15 @@ import { SiFacebook } from "react-icons/si";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-horizontal footer-center bg-[#111827] text-primary-content p-10">
-        <div className="grid grid-cols-3 gap-4">
+      <footer className="footer footer-center md:footer-horizontal bg-[#111827] text-primary-content p-6 md:p-10 gap-4 md:gap-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* about qurbani hat */}
-          <div className=" text-left p-3">
+          <div className=" text-left p-3 md:p-5">
             <h1 className="text-[26px] font-medium text-[#5ceb58]  ">
               Qurbani Hat
             </h1>
             <br />
-            <p className=" text-[14px] font-light ">
+            <p className=" text-[12px] sm:text-[14px] md:text-[14px] font-light leading-relaxed mt-2">
               <span className="text-[18px] font-medium">Qurbani Hat </span>is a
               modern livestock marketplace, where people can explore animals for
               Qurbani such as cows and goats.It producing highest quality and
@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
 
         {/* copy right div */}
-        <div>
+        <div className="text-center md:text-left">
           <div className="mb-6">
             <p>Social Links</p>
             <hr className="text-gray-500 " />
