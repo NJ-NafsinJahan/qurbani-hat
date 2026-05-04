@@ -84,7 +84,7 @@ const WhyUsPage = () => {
               ></Image>
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title">Farming practices</h2>
+              <h2 className="card-title">Healthy & Disease-free</h2>
               <p className="text-justify">
                 Our cattle are routinely health-checked and certified by
                 veterinarians. All cattle are vaccinated against Anthrax, FMD
